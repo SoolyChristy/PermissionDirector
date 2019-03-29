@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PermissionDirector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5L-eG-eWw">
+                                <rect key="frame" x="160.5" y="49" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTQ-Ea-ZUd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvg-o2-HSz">
+                                <rect key="frame" x="146.5" y="87" width="82" height="30"/>
+                                <state key="normal" title="Microphone"/>
+                                <connections>
+                                    <action selector="microhoneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1RZ-sO-yeG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-HL-KGp">
+                                <rect key="frame" x="148" y="125" width="79" height="30"/>
+                                <state key="normal" title="Notification"/>
+                                <connections>
+                                    <action selector="notificationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mey-Hf-uia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-Xf-0mA">
+                                <rect key="frame" x="148.5" y="163" width="78" height="30"/>
+                                <state key="normal" title="Phonebook"/>
+                                <connections>
+                                    <action selector="phonebookAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLx-Ji-Dwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-hN-WCr">
+                                <rect key="frame" x="141.5" y="201" width="92" height="30"/>
+                                <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="photoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="voY-qs-PDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKo-TF-igm">
+                                <rect key="frame" x="156.5" y="239" width="62" height="30"/>
+                                <state key="normal" title="Calendar"/>
+                                <connections>
+                                    <action selector="calendarAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0c-oB-Qy7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csI-2C-1sQ">
+                                <rect key="frame" x="114.5" y="277" width="146" height="30"/>
+                                <state key="normal" title="Location(whenInUse)"/>
+                                <connections>
+                                    <action selector="locationWhenInUseAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYE-uF-18u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHh-mz-yui">
+                                <rect key="frame" x="129.5" y="315" width="116" height="30"/>
+                                <state key="normal" title="Location(always)"/>
+                                <connections>
+                                    <action selector="locationAlwaysAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJO-ML-Ben"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dvg-o2-HSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0cX-P7-mdI"/>
+                            <constraint firstItem="lXP-hN-WCr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ut-JU-1WI"/>
+                            <constraint firstItem="a5L-eG-eWw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="7zN-sy-WCg"/>
+                            <constraint firstItem="EHh-mz-yui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ksy-qv-fdB"/>
+                            <constraint firstItem="Dvg-o2-HSz" firstAttribute="top" secondItem="a5L-eG-eWw" secondAttribute="bottom" constant="8" id="MpM-Ue-BJ7"/>
+                            <constraint firstItem="EHh-mz-yui" firstAttribute="top" secondItem="csI-2C-1sQ" secondAttribute="bottom" constant="8" id="OcG-cx-gr2"/>
+                            <constraint firstItem="VKo-TF-igm" firstAttribute="top" secondItem="lXP-hN-WCr" secondAttribute="bottom" constant="8" id="Q1u-fc-jo7"/>
+                            <constraint firstItem="Woz-Xf-0mA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UdX-h6-X6Z"/>
+                            <constraint firstItem="lXP-hN-WCr" firstAttribute="top" secondItem="Woz-Xf-0mA" secondAttribute="bottom" constant="8" id="W6s-hq-7bd"/>
+                            <constraint firstItem="csI-2C-1sQ" firstAttribute="top" secondItem="VKo-TF-igm" secondAttribute="bottom" constant="8" id="X0i-ZJ-Pcz"/>
+                            <constraint firstItem="IjP-HL-KGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gdh-nd-9Ze"/>
+                            <constraint firstItem="a5L-eG-eWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pt8-dz-KaJ"/>
+                            <constraint firstItem="VKo-TF-igm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAu-4q-p9L"/>
+                            <constraint firstItem="csI-2C-1sQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="usK-Fc-DGe"/>
+                            <constraint firstItem="Woz-Xf-0mA" firstAttribute="top" secondItem="IjP-HL-KGp" secondAttribute="bottom" constant="8" id="yQM-Gs-TCG"/>
+                            <constraint firstItem="IjP-HL-KGp" firstAttribute="top" secondItem="Dvg-o2-HSz" secondAttribute="bottom" constant="8" id="zgd-cN-NfF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="81.409295352323838"/>
+        </scene>
+    </scenes>
+</document>
