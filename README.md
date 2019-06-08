@@ -5,6 +5,12 @@
 ### 效果
 ![](https://raw.githubusercontent.com/SoolyChristy/PermissionDirector/master/shortcut.gif)
 
+### Carthage
+在```cartfile```添加
+```
+github "SoolyChristy/PermissionDirector"
+```
+
 ### 使用
   ```swift
   if !PermissionDirector.isAuthorized(for: .camera) {
