@@ -10,6 +10,15 @@
 ```
 github "SoolyChristy/PermissionDirector"
 ```
+### Swift Package Manager
+两种方式
+- 在```package.swift```添加
+```swift
+dependencies: [
+    .package(url: "https://github.com/SoolyChristy/PermissionDirector.git", from: "0.0.4")
+]
+```
+- 在Xcode11中的PROJECT - Swift Packages 添加
 
 ### 使用
   ```swift
