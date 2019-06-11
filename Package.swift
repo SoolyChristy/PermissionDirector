@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "PermissionDirector",
             dependencies: [],
-            path: "Sources"),
+            path: "PermissionDirector iOS"),
         .testTarget(
             name: "PermissionDirectorTests",
             dependencies: ["PermissionDirector"]),
