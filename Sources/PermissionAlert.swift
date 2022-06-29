@@ -40,7 +40,7 @@ final class PermissionAlertView: UIView {
   }
 
   required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    fatalError("init(coder:) has not been implemente")
   }
 
   private func setupUI() {
