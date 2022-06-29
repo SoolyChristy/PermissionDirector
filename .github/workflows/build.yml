@@ -17,4 +17,4 @@ jobs:
       - name: Build
         run: |
           cd Example
-          xcodebuild  -project PermissionDirectorExample.xcodeproj -scheme PermissionDirectorExample  -derivedDataPath build -configuration -arch arm64 Debug clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO" CODE_SIGN_IDENTITY="" CODE_SIGN_ENTITLEMENTS=""
+          xcodebuild  -project PermissionDirectorExample.xcodeproj -scheme PermissionDirectorExample  -derivedDataPath build -configuration Debug clean build CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED="NO" CODE_SIGN_IDENTITY="" CODE_SIGN_ENTITLEMENTS=""
