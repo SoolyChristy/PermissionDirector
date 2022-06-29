@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PermissionDirector"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "iOS Permission manager."
   s.description  = <<-DESC
 PermissionDirector is a iOS permission manager.
