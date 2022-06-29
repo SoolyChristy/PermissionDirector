@@ -5,6 +5,12 @@
 ### 效果
 ![](https://raw.githubusercontent.com/SoolyChristy/PermissionDirector/master/shortcut.gif)
 
+### Cocoapods
+在```podfile```添加
+```
+pod 'PermissionDirector'
+```
+
 ### Carthage
 在```cartfile```添加
 ```
