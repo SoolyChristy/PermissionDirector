@@ -11,5 +11,6 @@ PermissionDirector is a iOS permission manager.
   s.source       = { :git => "https://github.com/SoolyChristy/PermissionDirector.git", :tag => s.version }
   s.source_files  = ["Sources/*.swift"]
   s.platform     = :ios, '9.0'
+  s.swift_version = '5.0'
 
 end
