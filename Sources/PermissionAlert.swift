@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol PermissionAlertProtocol: class {
+public protocol PermissionAlertProtocol: AnyObject {
   /// 提供弹窗实例
   ///
   /// - Parameter type: 权限类型
