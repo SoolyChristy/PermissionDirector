@@ -44,7 +44,7 @@ final class PermissionAlertView: UIView {
   }
 
   private func setupUI() {
-    translatesAutoresizingMaskIntoConstraints = false
+    translatesAutoresizingMaskIntoConstraints =
 
     let coverView = UIView()
     coverView.backgroundColor = UIColor.black.withAlphaComponent(0.48)
